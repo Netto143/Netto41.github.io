@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishcine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Previne a rolagem */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-top: 5px solid #0000FF; /* Borda azul-preto */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .app-name {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .description {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Empilhar botões verticalmente */
+            gap: 10px; /* Espaço entre os botões */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px;
+            font-size: 1.2em;
+            color: #FFF;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsividade */
+        @media (max-width: 1000px) {
+            html, body {
+                overflow: hidden; /* Previne rolagem */
+                height: 100%; /* Garante que ocupe 100% da altura da tela */
+                width: 100%; /* Garante que ocupe 100% da largura da tela */
+            }
+
+            .app-name {
+                font-size: 2em;
+            }
+
+            .description {
+                font-size: 1em;
+            }
+
+            .button {
+                width: calc(100% - 40px); /* Ajusta o botão para a largura da tela menos o padding */
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="app-name">
+            Nome do App
+        </div>
+        <p class="description">
+            Prepare-se para curtir os melhores filmes de cinema no Nishcine
+        </p>
+        <div class="button-container">
+            <a href="#entrar" class="button">Entrar</a>
+            <a href="#cadastrar" class="button">Cadastrar</a>
+        </div>
+    </div>
+</body>
+</html>
